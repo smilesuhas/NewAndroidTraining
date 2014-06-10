@@ -1,0 +1,97 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="${packageName}.${activityClass}" >
+
+    <Button
+        android:id="@+id/btnTwentyPercent"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/btnFifteenPercent"
+        android:layout_alignBottom="@+id/btnFifteenPercent"
+        android:layout_alignRight="@+id/etBillAmount"
+        android:onClick="add20Percent"
+        android:text="@string/btnTextTwentyP" />
+
+    <Button
+        android:id="@+id/btnTenPercent"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/btnFifteenPercent"
+        android:layout_alignBottom="@+id/btnFifteenPercent"
+        android:layout_alignLeft="@+id/etBillAmount"
+         android:onClick="add10Percent"
+        android:text="@string/btnTextTenP" />
+
+    <Button
+        android:id="@+id/btnFifteenPercent"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/etBillAmount"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="25dp"
+        android:onClick="add15Percent"
+        android:text="@string/btnTextFifteenP" />
+
+    <EditText
+        android:id="@+id/etBillAmount"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="25dp"
+        android:ems="10"
+        android:hint="@string/tvToolTip"
+        android:imeOptions="actionDone"
+        android:inputType="numberDecimal" />
+
+    <TextView
+        android:id="@+id/tvTipIs"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/btnTenPercent"
+        android:layout_below="@+id/btnTenPercent"
+        android:layout_marginTop="25dp"
+        android:text="@string/tvTipIsResult"
+        android:textAppearance="?android:attr/textAppearanceLarge" />
+
+    <TextView
+        android:id="@+id/tvTotalIs"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/tvTipIs"
+        android:layout_below="@+id/tvFinalTip"
+        android:layout_marginTop="15dp"
+        android:text="@string/TotalIs"
+        android:textAppearance="?android:attr/textAppearanceLarge" />
+
+    <TextView
+        android:id="@+id/tvFinalTip"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/tvTipIs"
+        android:layout_alignBottom="@+id/tvTipIs"
+        android:layout_toRightOf="@+id/btnFifteenPercent"
+        android:textAppearance="?android:attr/textAppearanceLarge" />
+
+    <TextView
+        android:id="@+id/tvFinalTotal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/tvTotalIs"
+        android:layout_alignBottom="@+id/tvTotalIs"
+        android:layout_toRightOf="@+id/btnFifteenPercent"
+         android:textAppearance="?android:attr/textAppearanceLarge" />
+
+    <ImageView
+        android:id="@+id/ivCoins"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/tvFinalTotal"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="97dp"
+        android:src="@drawable/ic_coins1"
+        android:visibility="invisible" />
+
+</RelativeLayout>
