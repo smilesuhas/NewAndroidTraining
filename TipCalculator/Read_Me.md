@@ -9,12 +9,12 @@ Time spent: 2-3 hours spent in total
 
 Completed user stories:
 
- * [x] User is displayed the tip of specified percentage for specified entered amount
+ * [x]  User is displayed the tip of specified percentage for specified entered amount
  * [x]	User enters the total amount of the transaction
  * [x]	User can select between tip amounts (i.e 10%, 15%, 20%)
  * [x]	Upon selecting tip amount, formatted tip value is displayed
- * [x]	(Optional- Completed) User changes the total amount and updated tip is reflected automatically
- * [x]	(Optional- Completed) Improve the user interface and experience by using images and/or colors
+ * [x]	User changes the total amount and updated tip is reflected automatically (Optional- Completed) 
+ * [x]	Improve the user interface and experience by using images and/or colors (Optional- Completed) 
  * [x]	Added keyboard done actions, default tips% selection and highlighting the tips% button that was selected and then display the total bill 
  
 Installation: 
