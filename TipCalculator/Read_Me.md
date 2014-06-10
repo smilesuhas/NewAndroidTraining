@@ -22,7 +22,5 @@ Run the installation .apk file and it will prompt to install. After installation
 
 Walkthrough of all user stories:
 
-![Video Walkthrough](anim_rotten_tomatoes.gif)
-
-GIF created with [LiceCap](http://www.cockos.com/licecap/).
+![Video Walkthrough](Tip_calculator.gif)
 
