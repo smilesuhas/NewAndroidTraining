@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Tip Calculator</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="tvToolTip">Enter the bill amount...</string>
+    <string name="btnTextTenP">10%</string>
+    <string name="btnTextFifteenP">15%</string>
+    <string name="btnTextTwentyP">20%</string>
+    <string name="tvTipIsResult">Tip is:</string>
+    <string name="add10Percent">add10Percent</string>
+    <string name="add15Percent">add15Percent</string>
+    <string name="add20Percent">add20Percent</string>
+    <string name="TotalIs">Total Bill is:</string>
+
+</resources>
