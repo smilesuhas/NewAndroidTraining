@@ -5,8 +5,122 @@
     tools:context="${packageName}.${activityClass}" >
 
     <TextView
+        android:id="@+id/tvAdvanced"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="@string/hello_world" />
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:paddingLeft="5dp"
+        android:paddingTop="10dp"
+        android:text="@string/Advancesearchlabel"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:textSize="20sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/tvImageSize"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/tvAdvanced"
+        android:layout_marginTop="20dp"
+        android:paddingLeft="5dp"
+        android:text="@string/imagesize"
+        android:textSize="20sp" />
+
+    <TextView
+        android:id="@+id/tvColor"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/tvImageSize"
+        android:layout_marginTop="20dp"
+        android:paddingLeft="5dp"
+        android:text="@string/colorfilter"
+        android:textSize="20sp" />
+
+    <TextView
+        android:id="@+id/tvType"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tvColor"
+        android:layout_marginTop="20dp"
+        android:paddingLeft="5dp"
+        android:text="@string/imagetype"
+        android:textSize="20sp" />
+
+    <TextView
+        android:id="@+id/tvSite"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/tvType"
+        android:layout_marginTop="19dp"
+        android:paddingLeft="5dp"
+        android:text="@string/sitefilter"
+        android:textSize="20sp" />
+
+    <Spinner
+        android:id="@+id/spnSize"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/tvImageSize"
+        android:layout_below="@+id/tvAdvanced"
+        android:layout_marginTop="5dp"
+        android:layout_marginLeft="20dp"
+        android:layout_toRightOf="@+id/tvType"
+        android:textSize="20sp"
+        android:entries="@array/image_size" />
+
+        <Spinner
+        android:id="@+id/spnColor"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/tvColor"
+        android:layout_below="@+id/spnSize"
+        android:layout_marginTop="5dp"
+        android:layout_toRightOf="@+id/tvColor"
+        android:textSize="20sp"
+        android:layout_alignLeft="@+id/spnSize"
+        android:entries="@array/colors" />
+    
+        <Spinner
+        android:id="@+id/spnType"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/tvType"
+        android:layout_below="@+id/spnColor"
+        android:layout_marginTop="5dp"
+        android:layout_toRightOf="@+id/tvType"
+        android:textSize="20sp"
+        android:layout_alignLeft="@+id/spnColor"
+        android:entries="@array/image_type" />
+        
+        <Button
+            android:id="@+id/btnSave"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tvSite"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="20dp"
+            android:onClick="OnSave"
+            android:text="Save"
+            android:textSize="20sp" />
+
+        <EditText
+            android:id="@+id/etSite"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/tvSite"
+            android:layout_alignLeft="@+id/spnType"
+            android:layout_below="@+id/spnType"
+            android:layout_marginTop="5dp"
+            android:layout_toRightOf="@+id/tvSite"
+            android:ems="10"
+            android:hint="@string/hintSite"
+            android:textSize="20sp" >
+
+            <requestFocus />
+        </EditText>
 
 </RelativeLayout>

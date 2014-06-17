@@ -15,4 +15,14 @@
         
         </com.loopj.android.image.SmartImageView>
 
+    <Button
+        android:id="@+id/btnShare"
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/ivResult"
+        android:layout_centerHorizontal="true"
+        android:onClick="OnShare"
+        android:text="@string/share" />
+
 </RelativeLayout>
