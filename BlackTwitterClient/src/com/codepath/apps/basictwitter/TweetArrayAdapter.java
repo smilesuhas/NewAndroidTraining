@@ -29,11 +29,11 @@ public class TweetArrayAdapter extends ArrayAdapter<Tweet> {
  	public TweetArrayAdapter(Context context, List <Tweet> tweets) {
 		super(context,0,tweets );
  	}
-	
+
 	@Override
 	public View getView(int position, View convertView, ViewGroup parent) {
  		//return super.getView(position, convertView, parent);
-		
+
 		//get data item for position
 		Tweet tweet =getItem(position);
 		//find or inflate template
@@ -53,7 +53,7 @@ public class TweetArrayAdapter extends ArrayAdapter<Tweet> {
 
 		ivProfileImage.setImageResource(android.R.color.transparent);
 		ImageLoader imageLoader=ImageLoader.getInstance();
-		
+
 		//populate views with tweet data
 		imageLoader.displayImage(tweet.getUser().getProfileImageUrl(),ivProfileImage);
 		tvUserId.setText("@"+tweet.getUser().getScreenName());
@@ -65,14 +65,14 @@ public class TweetArrayAdapter extends ArrayAdapter<Tweet> {
 		tvCreatedAt.setText(getTweetFormatDate(createdAt));
 		return v;
 	}
-	
-	
-	
-	
+
+
+
+
  	private String  getTweetFormatDate(String createdAt) {
  		//createdAt="Thu Jun 19 22:34:36 +0000 2014";
   	//get current date parameters		
-		
+
 
 		 	//get TWEET date parameters				
  			SimpleDateFormat  tweetDateFormat = new SimpleDateFormat("EEE MMMM dd k:mm:ss ZZ yyy"); //("yyyy-MM-dd'T'HH:mm:ss");  
@@ -112,7 +112,7 @@ public class TweetArrayAdapter extends ArrayAdapter<Tweet> {
  	//Log.d("debug",  "CR"+currentYear.toString()+" "+currentMonth+" "+currentYearDay.toString()+" " +currentHour.toString()+" "+currentMinute.toString() +" "+currentSecond.toString());
  	//Render the time in twitter format
 		String easyTweetTime = null;
-		
+
 		Integer TweetTotalDays =0;
 		if(currentYear>tweetYear){ 
 			int leap=0;
@@ -123,7 +123,7 @@ public class TweetArrayAdapter extends ArrayAdapter<Tweet> {
 		} else{
 			TweetTotalDays = (currentYearDay-tweetDay);
 		} // 9 4   8 42  0 days 
-		
+
 		 Integer TweetTotalHours =0;
 		 Integer TweetTotalMinutes=0 ;
 		if(tweetHour>currentHour){ 
@@ -137,15 +137,15 @@ public class TweetArrayAdapter extends ArrayAdapter<Tweet> {
   
 		 Integer TweetTotalSeconds =0;
 		if(tweetMinute>currentMinute){ 
-			
+
 			TweetTotalMinutes = (60-tweetMinute+currentMinute)  ;
 			TweetTotalHours=TweetTotalHours-1;
 		} else{
 			TweetTotalMinutes = (currentMinute-tweetMinute);
 			}
-		
+
 		if (tweetSecond>currentSecond){
-		
+
 			TweetTotalSeconds = (60+currentSecond-tweetSecond)  ;
 			TweetTotalMinutes=TweetTotalMinutes-1;
 		} else{ 

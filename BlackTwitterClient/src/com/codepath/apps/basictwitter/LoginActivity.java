@@ -27,12 +27,12 @@ public class LoginActivity extends OAuthLoginActivity<TwitterClient> {
 	// i.e Display application "homepage"
     @Override
     public void onLoginSuccess() {
-    	
+
     	 Intent i = new Intent(this, TimelineActivity.class);
     	 startActivity(i);
-    	//Toast.makeText(this, "SUCCESS", Toast.LENGTH_SHORT).show();
-    	this.finish();
-    	android.os.Process.killProcess(android.os.Process.myPid());
+//    	 Toast.makeText(this, "SUCCESS", Toast.LENGTH_SHORT).show();
+    	 this.finish();
+    	 android.os.Process.killProcess(android.os.Process.myPid());
     }
     
     // OAuth authentication flow failed, handle the error

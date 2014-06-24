@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    android:layout_width="match_parent"
-    android:layout_height="match_parent" >
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent" >
 
     <ImageView
         android:id="@+id/ivProfileImage"
@@ -38,7 +38,7 @@
         android:text="This is the Body"
         android:textColor="@color/tweet_color"
         android:textColorLink="@color/link_color"
-        android:textSize="12sp" />
+        android:textSize="12dp" />
 
     <TextView
         android:id="@+id/tvUserId"
@@ -52,7 +52,7 @@
         android:maxLines="1"
         android:text="TextView"
         android:textColor="@color/at_color"
-        android:textSize="14sp"
+        android:textSize="14dp"
         android:textStyle="italic" />
 
     <TextView
@@ -66,6 +66,6 @@
         android:paddingLeft="5dp"
         android:text="TextView"
         android:textColor="@color/at_color"
-        android:textSize="14sp" />
+        android:textSize="14dp" />
 
 </RelativeLayout>
