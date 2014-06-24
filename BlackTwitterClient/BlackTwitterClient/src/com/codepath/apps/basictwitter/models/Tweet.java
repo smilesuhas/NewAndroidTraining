@@ -7,7 +7,7 @@ import org.json.JSONException;
 import org.json.JSONObject;
 
 public class Tweet {
-	public static Long maxTweetId;
+	public static Long maxTweetId=(long) 1;
 	private String body;
 	public Long uid;
 	private String createdAt;
@@ -54,8 +54,8 @@ public class Tweet {
 
 	public static ArrayList< Tweet> fromJSONArray( JSONArray jsonArray) {  ////**************************************************************
 		ArrayList< Tweet> tweets = new ArrayList< Tweet>(jsonArray.length());
-
-		for(int i=0;i<jsonArray.length();i++)		{
+ 	
+  		for(int i=0;i<jsonArray.length();i++)		{
 			JSONObject tweetJson = null;
  		try{
 			tweetJson=jsonArray.getJSONObject(i);

@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/black_color" >
+
+    <EditText
+        android:id="@+id/etComposeText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/btnCompose"
+        android:autoLink="web"
+        android:gravity="center_vertical|top"
+        android:hint="@string/composeTweet"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:textColor="@color/white_color"
+        android:textColorHint="@color/tweet_color" />
+
+    <Button
+        android:id="@+id/btnCompose"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:onClick="onCompose"
+        android:text="TWEET"
+        android:textColor="@color/user_color" />
+
+    <ImageView
+        android:id="@+id/imageView1"
+        android:layout_width="60dp"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/btnCompose"
+        android:layout_alignTop="@+id/btnCompose"
+        android:layout_toLeftOf="@+id/btnCompose"
+        android:scaleType="fitEnd"
+        android:src="@drawable/ic_twitter_icon" />
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="60dp"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/btnCompose"
+        android:layout_alignTop="@+id/btnCompose"
+        android:layout_toRightOf="@+id/btnCompose"
+        android:scaleType="fitStart"
+        android:src="@drawable/ic_twitter_icon_right" />
+
+    <TextView
+        android:id="@+id/tvCounter"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/btnCompose"
+        android:layout_alignParentRight="true"
+        android:layout_alignTop="@+id/btnCompose"
+        android:layout_toRightOf="@+id/imageView2"
+        android:gravity="center"
+        android:text="140"
+        android:textColor="@color/tweet_color"
+        android:textStyle="bold|italic" />
+
+</RelativeLayout>
