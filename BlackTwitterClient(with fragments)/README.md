@@ -48,7 +48,11 @@ Walkthrough of all user stories:
 
 ![Video Walkthrough](Twitter_profiles.gif)
 
+
+
 For compose
+
+
 ![Video Walkthrough](Twitter_Compose.gif)
 
 
