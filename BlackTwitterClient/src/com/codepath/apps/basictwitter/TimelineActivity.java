@@ -123,12 +123,17 @@ public class TimelineActivity extends Activity {
                 // Now we call onRefreshComplete to signify refresh has finished
 				Log.d("debug","inside on success");
   				aTweets.addAll(Tweet.fromJSONArray(  json));  ////***********
- 				lvTweets.onRefreshComplete();
   				Log.d("debug","refresh complete");
              }
              public void onFailure(Throwable e) {
                 Log.d("DEBUG", "Fetch timeline error: " + e.toString());
-                lvTweets.onRefreshComplete();
+                
+            }
+             @Override
+            public void onFinish() {
+            	// TODO Auto-generated method stub
+            	super.onFinish();
+            	lvTweets.onRefreshComplete();
             }
         });
     }

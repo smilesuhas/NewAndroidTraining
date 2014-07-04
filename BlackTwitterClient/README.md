@@ -10,6 +10,12 @@ Time spent: 12 hours spent in total
  * Sending requests for and parsing JSON API data using a defined client
  * Persisting data to a local SQLite store through an ORM layer
  * Displaying and caching remote image data into views
+ * see mentions
+ * see user profile
+ * click on other user to see their profile
+ * compose activity
+ * using fragments
+
 
 The following libraries are used to make this possible:
 
@@ -40,5 +46,10 @@ Run the installation .apk file and it will prompt to install. After installation
 
 Walkthrough of all user stories:
 
-![Video Walkthrough](BlackTwitter.gif)
+![Video Walkthrough](Twitter_profiles.gif)
+
+For compose
+![Video Walkthrough](Twitter_Compose.gif)
+
+
 
